@@ -1,0 +1,734 @@
+
+:root{
+    --color-orange: #f44336;
+    --container-width: calc(100% - 278px);
+}
+
+*{
+    font-family: 'Raleway';
+    font-style: normal; 
+    
+}
+.ft-size-large-g{
+    font-size: 22pt;
+}
+.ft-size-large{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.ft-size-medium{
+    font-size: 12pt;
+}
+
+.ft-size-small{
+    font-size: 12pt;
+}
+body{
+    display: block;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    /* height: 2720px; */
+    background-color: #f1f1f1; 
+    
+}
+
+img{
+    width: 100%;
+    /* height: 100%; */
+}
+
+header{
+    width:100%;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    /* min-height: 2px;   */
+}
+i{
+    font-style: normal;
+}
+
+.container-logo-search{
+    width: calc(100% - 20px);
+    height: calc(100-20px);
+    /* background-color: blue; */
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    color: var(--color-orange);
+    /* background-color: orange; */
+}
+
+.container-logo-search i{
+    font-weight: bold ;
+    font-size: 18pt;
+   
+}
+
+.container-logo {
+    width: calc(50% - 10px);
+    height: 100%;
+    /* background-color: #6516af; */
+    display: flex;
+    align-items: center;
+}
+.container-search{
+    width: calc(50% - 10px);
+    height: 100%;
+    /* background-color: rgb(251, 252, 244); */
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row;
+    /* align-content:flex-end; */
+}
+
+.container-search input{
+    /* display: none; */
+    align-self: center;
+}
+
+.search-button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 18pt;
+    color: #909090;
+    box-sizing: border-box;
+}
+
+.search-button:hover{
+    color: #f44336;
+}
+
+
+.container{
+    /* background: url(/imagens/london.jpg) no-repeat; */
+    background-image: url('../imagens/london.jpg');
+    background-size: cover;
+    background-position:top left;
+    width: 100%;
+    height: 46.55vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: #606060 1px solid; */
+    box-sizing: border-box;
+    
+}
+
+
+.container-flight-hotel-rental{
+   width: 888px;
+   height: 258px;
+   margin: 107px;
+    position: relative;
+    background-color: white;
+    /* min-height: 258px;
+    max-height: 258px; */
+}
+
+.ul-container-buttons{
+    width: 100%;
+    height: 38px;
+    /* min-height: 38px; */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+}
+
+.container-abas-flight-hotel-rental
+{
+    width: 100%;
+    height: 85%;
+    /* min-width: 600px; */
+    /* background-color: aqua; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* min-height: 200px; */
+}
+
+.container-flight-hotel-rental ul button{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    color: white;
+    font-size: 11pt;
+    background-color: inherit;
+}
+
+.container-from-to{
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    /* flex-flow: row; */
+    justify-content: space-between;
+    /* background-color: yellow; */
+}
+
+.container-from-to label{
+    font-size: 0.65em;
+}
+.abas-flight-hotel-rental button{
+    width: 11.35rem;
+    font-size: 11.5pt;
+    height: 2.5rem;
+    color: white;
+    background-color: #606060;
+    border: none;
+}
+
+.container-from-to input{
+    height: 36px;
+    border-color: #dad4d4;
+    background-color: inherit;
+    border-width: 1px;
+    border-style:solid;
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-from-to input::placeholder{
+    padding-left: 5px;
+    font-size: 1rem;
+    color: #909090;
+}
+
+.container-text-from-to{
+    display: flex;
+    flex-flow: column;
+    width: calc(50% - 8px);
+}
+
+.container-text-from-to label{
+    font-size: 1rem;
+}
+
+.container-flight-hotel-rental ul button:focus:not(:active){
+    background-color: var(--color-orange);
+}
+
+.container-flight-hotel-rental ul button:hover{
+    background: white;
+    color: black;
+}
+
+
+
+.abas-flight-hotel-rental{
+    width: calc(100% - 30px);
+    height: calc(100% - 60px);
+    /* background-color:rgb(255, 255, 255); */
+    align-self: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+/* offers */
+.container1{
+    width: 100%;
+    height: 29.5rem;
+    /* height: 471px; */
+    position: relative;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-flow: column;
+    justify-content: space-between;
+    margin-top: 32px;
+    /* background-color: rgb(78, 8, 143); */
+}
+
+.container-offers-image{
+    width: 1066px;
+    height: 29.45em;
+    /* margin: 0px 10px 0px 10px; */
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    background-color: white;
+    
+}
+
+.container-offers{
+    width: 100%;
+    height: 60px;
+    position: relative;
+    display: flex;
+    /* background-color: rgb(9, 228, 93); */
+}
+.container-text-offers{
+    /* font-size: 0.9em; */
+    width: 100%;
+    height: 100%;
+    /* background-color: #606060; */
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    flex-flow: column;
+}
+
+
+/* imagens section 1 */
+.container-img-section{
+    width: 100%;
+    height: calc(88.5% - 20px);
+    /* background-color: rgb(45, 45, 160); */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 15px;
+}
+
+.container-img{
+    width: calc(50% - 10px);
+    /* align-content: flex-end; */
+    /* float: left; */
+    height: 100%;
+    /* background-color: rgb(0, 255, 34); */
+
+}
+
+.container-item-img{
+    width: calc(50% - 9px);
+    height: calc(50% - 6px);
+    align-items: flex-end;
+    /* background-color: rgb(68, 87, 68); */
+}
+.container-img-four-images{
+    width: calc(50% - 5px);
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-content: space-between;
+    /* responsividade */
+   
+
+}
+
+
+/* locais */
+.container2{
+    width: 100%;
+    height: 568px;
+    /* max-height: 468px; */
+    position: relative;
+    display: flex;
+    margin: auto;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 35px;
+    /* background-color: blueviolet; */
+}
+
+.container-offers-buyticket{
+    width: 1066px;
+    height: 100%;
+    /* background-color: white; */
+}
+/* subscribe */
+.container3{
+    width: 100%;
+    /* height: 740px; */
+    /* height: 54.2vw; */
+    position: relative;
+    display: flex;
+    margin: auto;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 30px;
+    /* background-color: rgb(123, 216, 18); */
+
+}
+
+.container-contact-subscribe{
+    width: 1066px;
+    height: 740px;
+    display: flex;
+    position: relative;
+    flex-flow: column;
+    align-content: space-between;
+}
+ /* meail subscribe */
+ form.container-form-subscribe{
+    width: 100%;
+    height: 271px;
+    position: relative;
+    display: flex;
+    /* flex-flow: column; */
+    justify-content: center;
+    align-items: center;
+    background-color: #606060;
+}
+.container-subscribe{
+    width: calc(calc(100%) - 40px);
+    height: calc(100% - 40px);
+    /* background-color: rgb(152, 238, 125); */
+    color: white;
+}
+
+.join-newssletter-menssage{
+    height: 48%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;            
+}
+.container-textbox-button{
+    height: 52%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+button.btn-subscribe{
+    /* width: 19vh; */
+    background-color: var(--color-orange);
+    border: none;
+    height: 35%;
+    color: white;
+    /* font-weight: bold; */
+}
+.email-textbox{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-flow: column;
+    /* background-color: red; */
+    box-sizing: border-box;
+}
+input[name="textb-subscribe"]{
+    height: calc(60%);
+}
+form.send-message{
+    width: 100%;
+    height:61%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    /* background-color: rgb(179, 255, 0); */
+}
+
+.contact-means{
+    width: 100%;
+    height: 16%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    /* background-color: ; */
+}
+.contact-means-icon{
+    font-size: 12pt;
+}
+
+.send-contact-textbox{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    /* background-color: red; */
+    flex-flow: column;
+    justify-content: space-between;
+}
+.send-contact-textbox input{
+    height: 24%;
+}
+
+.send-contact-textbox input::placeholder{
+    font-size: 13pt;
+    padding-left: 5px;
+}
+.btn-send-message{
+    width: 160px;
+    background-color: black;
+    color: white;
+    height: 10%;
+    font-size: 12pt;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.contact-message{
+    display: flex;
+    flex-flow: column;
+    height: 16%;
+    justify-content: space-between;
+}
+.container-img-legend-city{
+    position: relative;
+    width: 80%;
+    margin: 0px;
+    /* bottom: 25px; */
+    bottom: 35px;
+    left: 15px;
+}
+
+.img-legend-city{
+    z-index: 100;
+    position: relative;
+    color: rgb(207, 219, 207);
+    font-weight: bolder;
+    font-size: 14px;
+    align-self: auto;
+    
+}
+
+.container-img-place{
+    width: 100%;
+    height: min-content;
+    /* background-color: brown; */
+}
+
+form.container-buy-tickets{
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    /* background-color: rgb(236, 236, 16); */
+    display: flex;
+    margin: auto;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+
+.container-img-buy-ticket{
+    width: calc(50% - 8px);
+    height: calc(100%);
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    /* align-content: center; */
+    align-items: center;
+}
+
+.container-form-buy-tickets{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+}
+
+.button-buy-tickets{
+    width: 108px;
+    height: 40px;
+    font-size: 12pt;
+    background-color: #f1f1f1;
+    border: none;
+    transition: 0.5s;
+}
+.button-buy-tickets:hover{
+    background-color: var(--color-orange);
+    color: white;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 768px){
+    .container-flight-hotel-rental{
+        /* position: relative; */
+        margin: 40px 107px 60px 107px;
+        width: 100%;
+    }
+}
+
+
+/* footer */
+.footer{
+    position: relative;
+    width: 100%;
+    height: 138px;
+    /* background-color: rgb(255, 255, 255); */
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 40px;
+    color: #606060;
+
+}
+
+.icon-redes-sociais i{
+    font-size: 19pt;
+}
+
+.icon-redes-sociais{
+    width: 100%;
+    /* background-color: aquamarine; */
+    /* align-items: center; */
+}
+
+
+ /* ------------------------- */
+ @media only screen and (max-width: 600px){
+    .container-flight-hotel-rental{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+
+    .container{
+        height: 277px;
+    }
+
+    .container-flight-hotel-rental ul button{
+        width: 20%;
+    }
+
+    .container1{
+        width: 100%;
+        height: 366vw !important;
+        padding-bottom: 2px;
+    }
+    .container-offers-image{
+        /* height: min-content; */
+        width: 100%;
+        height: 100%;
+        flex-flow: column;
+        justify-content: flex-start;
+    }
+    .container-img-section{
+        flex-flow: column;
+        width: 100%;
+        height: 100%;
+        /* margin-top: 20px; */
+        /* height: fit-content; */
+    }
+    .container-img{
+        width: 100%;
+        height: 69vw;
+        padding-bottom: 20px;
+    }
+    .container-img-four-images{
+        flex-flow: column;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 0px;
+    }
+
+    .container-item-img{
+        width: 100%;
+        height: 71vw;
+        padding-top: 10px;
+    }
+
+
+    .container-img-buy-ticket{
+        width: 100%;
+        height: 577px;
+        padding-bottom: 10px;
+    }
+
+    .container2{
+        height: fit-content;
+    }
+
+    .container-offers-buyticket{
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (max-width:425px)
+{
+    .container-flight-hotel-rental ul button{
+        width: 100%;
+    }
+}
+
+ @media only screen and (max-width:1100px)
+ {
+     .container1{
+        height: 42.5vw;
+     }
+     .container-offers-image {
+         width: calc(100% - 40px);
+         height: 42.5vw;
+     }
+     .container-contact-subscribe{
+        width: calc(100% - 40px);
+    }
+    .container-offers-buyticket{
+        width: calc(100% - 40px);
+    }
+ }
+
+ @media only screen and (max-width:450px)
+ {
+
+    header{
+        height: 11.5vw;
+    }
+     
+     .container-from-to{
+         flex-flow: column;
+     }
+
+     .container-text-from-to{
+         width: 100%;
+        }
+
+    .container1{
+        width: 100%;
+       
+    }
+    .container-offers-image{
+        height: min-content;
+        flex-flow: column;
+        justify-content: flex-start;
+    }
+    .container-img-section{
+        flex-flow: column;
+        width: 100%;
+        
+        height: fit-content;
+    }
+    .container-img{
+        width: 100%;
+        height: 66vw;
+    }
+    /* .container-img-four-images{
+        flex-flow: column;
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 0px;
+    } */
+
+    .container-item-img{
+        width: fit-content;
+        height: 68.5vw;
+        padding-top: 10px;
+    }
+
+    .container-img-buy-ticket{
+        width: 100%;
+        height: 400px;
+        padding-bottom: 10px;
+    }
+    .abas-flight-hotel-rental{
+        height: calc(100% - 10px);
+
+    }
+ }

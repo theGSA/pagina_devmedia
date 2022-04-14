@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Desagio Dev Media</title>
+</head>
+<body>
+    <header>
+        <div class="container-logo">
+            <i class="fa fa-map-marker"></i>
+            <i>Logo</i>
+        </div>
+        <div class="container-search">
+            <input type="text">
+            <button class="fa fa-search"></button>
+        </div>
+    </header>
+    <section class="container sec1">
+        <img class="background-sec1"src="/imagens/london.jpg" alt="imagem de londres">
+        <div class="abas-flight-hotel-rental">
+            <nav>
+                <button class="fa fa-plane"><i>Flight</i></button>
+                <button class="fa fa-bed"><i>Hotel</i></button>
+                <button class="fa fa-car"><i>Rental</i></button>
+            </nav>
+            <!-- <div class="container-aba"> -->
+            <h2>Travel the world with us</h2>
+            <form action="">
+                <div class="container-textbox">
+                    <div>
+                        <label for="from">From</label>
+                        <input type="text" name="from" id="from" placeholder="Departing from">
+                    </div>
+                    <div>
+                        <label for="to">To</label>
+                        <input type="text" id="to" name="to" placeholder="Arriving at">
+                    </div>
+                </div>
+                <button class="btn-search-and-find">search and find dates</button>
+                <!-- </div> -->
+            </form>
+        </div>
+    </section>
+    <section class="container sec2">
+        <h2>Good Offers Right Now</h2>
+        <i>Up to <b>50%</b> discount</i>
+        <div class="container-imagens">
+            <img src="/imagens/cinqueterre.jpg">
+            <div>
+                <img src="/imagens/newyork.jpg" >
+                <img src="/imagens/sanfran.jpg" >
+                <img src="/imagens/pisa.jpg" >
+                <img src="/imagens/paris.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section class="container sec3">
+        <h2>Explore Nature</h2>
+        <i>Travel with us and see nature at its finest</i>
+        <div class="container-buy-tikets">
+            <div class="Buy-tickets">
+                <img src="/imagens/ocean.jpg" alt="">
+                <h2>West Coast, Norway</h2>
+                <i>Roundtrip from $79</i>
+                <i>Praesent tincidunt sed tellis sed vitae justo</i>
+                <Button>Buy Tickets</Button>
+            </div>
+
+            <div class="Buy-tickets" >
+                <img src="/imagens/ocean.jpg" alt="">
+                <h2>West Coast, Norway</h2>
+                <i>Roundtrip from $79</i>
+                <i>Praesent tincidunt sed tellis sed vitae justo</i>
+                <Button>Buy Tickets</Button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container sec4">
+        <div class="container-email-subscribe">
+
+            <h2>Get the best offers first!</h2>
+            <i>join our newsletter</i>
+            <form class="email-subscribe" action="">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" placeholder="Your Email address">
+                <button class="btn-subscribe">Subscribe</button>
+            </form>
+        </div>
+        <h2>Contact</h2>
+        <i>let us book your next trip!</i>
+        <div class="means-contact">
+            <i class="fa fa-map-marker contact-means-icon"><a style="padding-left: 20px;font-family: 'Raleway';">Chicago Us</a></i>
+            <i class="fa fa-phone contact-means-icon" ><a style="padding-left: 1.1rem; font-family: 'Raleway';">Phone: +00 151515</a></i>
+            <i class="fa fa-envelope contact-means-icon fnt-envelope" ><a style="padding-left: 16px; font-family: 'Raleway';">Email: mail@mail.com</a></i>
+        </div>
+        <form class="form-send-menssage">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Message">
+            <button>SEND MESSAGE</button>
+        </form>
+    </section>
+
+    <footer>
+        <i class="ft-size-medium">Find Us On</i>
+        <div class="icon-redes-sociais">
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-snapchat"></i>
+            <i class="fa  fa-pinterest-p"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <i class="ft-size-small">Powered by <u>w3css</u> </i>
+    </footer>
+</body>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Raleway';
+        font-style: normal;
+    }
+
+    body{
+        /* width: 1366px; */
+    }
+    img{
+        width: 100%;
+    }
+
+
+    header{
+        width: 100%;
+        background-color: white;
+        /* height: 100%; */
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+    }
+    .container-logo{
+        padding: 12px;
+        padding-left: 15px;
+        font-size: 24px;
+        font-weight: bolder;
+        color: orangered;
+    }
+
+    .container-logo i{
+        padding-right: 15px;
+    }
+
+    .container-search{
+        padding: 10px;
+    }
+
+    .container{
+        width: 1066px;
+        margin: auto;
+        margin-top: 40px;
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+
+    .sec1{
+        width: 100%;
+        margin: 0;
+        position: relative;
+        object-position: center;
+        justify-content: center;
+        border: 1px solid rgb(201, 6, 119);
+        box-sizing: border-box;
+    }
+
+    .abas-flight-hotel-rental{
+        width: 880px;
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        align-self: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .abas-flight-hotel-rental nav{
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        display: flex;
+
+    }
+    .abas-flight-hotel-rental nav button{
+        width: 100%;
+        flex-direction: row;
+        border: none;
+        padding: 10px;
+        background-color: black;
+        color: white;
+    }
+
+    .abas-flight-hotel-rental nav button i{
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .abas-flight-hotel-rental nav button:focus{
+        background-color: orangered;
+    }
+
+    .abas-flight-hotel-rental nav button{
+        padding: 12px;
+    }
+
+    .abas-flight-hotel-rental nav button:hover{
+        background-color: orangered;
+    }
+    .container-aba{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        background-color: green;
+    }
+    .abas-flight-hotel-rental h2{
+        padding: 15px;
+        padding-top: 30px;
+    }
+
+    .container-textbox{
+        padding: 0 15px;
+        position: relative;
+        display: flex;
+        width: 100%;
+        background-color: white;
+        /* justify-content: space-between; */
+        gap: 15px;
+    }
+    .container-textbox label{
+        font-size: 14px;
+    }
+    .container-textbox div{
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container-textbox div input{
+        padding: 10px;
+        border-width: 0.1pc;        
+    }
+    #from{
+        width: 100%;
+    }
+    .btn-search-and-find{
+        margin: 15px 15px 30px 15px;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #909090;
+        border: none;
+        font-weight: bold;
+        color: white;
+    }
+
+    .sec2{
+        width: 1066px;
+        height: 465px;
+        background-color: forestgreen;
+        margin: auto;
+        margin-top: 40px;
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+
+    .container-imagens{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        position: relative;
+        gap: 15px;
+        border: rgb(1, 8, 1) 1px solid;
+    }
+    .container-imagens img{
+        width: calc(50% - 7.5px);
+        opacity: 0.8;
+  }
+    .container-imagens div{
+        /* width: 50%; */
+        opacity: 0.8;
+        position:relative;
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-flow: row wrap;
+    }
+
+
+    .container-buy-tikets{
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-flow: row;
+        gap: 15px;
+    }
+    .Buy-tickets{
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        gap: 10px;
+        background-color: red;
+    }
+    .Buy-tickets img{
+        width: 100%;
+    }
+
+    .sec3{
+        width: 1066px;
+        height: 530px;
+        background-color: forestgreen;
+        margin: auto;
+        margin-top: 30px;
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+    .sec3 i, .sec3 h2{
+        padding: 0;
+    }
+
+    .Buy-tickets i, .Buy-tickets h2{
+        padding: 5px 0px 0px 15px;
+    }
+
+    .Buy-tickets button{
+        width: max-content;
+        padding: 10px;
+        margin: 0px 0px 20px 20px;
+        background-color: inherit;
+        border: none;
+        font-size: 14px;
+    }
+
+    /* .sec4{
+        position: relative;
+    } */
+    .container-email-subscribe{
+        background-color: #5f5e5e;
+        color: white;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-email-subscribe h2,
+    .container-email-subscribe i,
+    .container-email-subscribe form{
+        padding-left: 15px;
+    }
+    
+    .container-email-subscribe h2{
+        font-size: 30px;
+        padding-top: 40px;
+    }
+
+    .container-email-subscribe > i{
+        position: relative;
+        padding-top: 20px;
+    }
+    .email-subscribe{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .email-subscribe label{
+        padding-left: 0px;
+        padding-top: 5px;
+    }
+
+    
+    .email-subscribe input{
+        margin: 5px 15px 0px 0px;
+        padding: 10px;
+    }
+
+    .btn-subscribe{
+        height: fit-content;
+        width: fit-content;
+        padding: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .means-contact{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sec4 > h2{
+        margin-top: 40px;
+        font-size: 24px;
+    }
+
+    .container > i{
+        margin-top: 20px;
+    }
+
+    .means-contact{
+        clear: both;
+        margin-top: 20px;
+        gap: 5px;
+    }
+
+    .form-send-menssage{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form-send-menssage > input{
+        padding: 20px;
+
+    }
+
+    .form-send-menssage > button{
+        padding: 20px 30px 20px 30px;
+        width: fit-content;
+        background-color: black;
+        font-weight: bold;
+        font-size: 14px;
+        color: white;
+        border: none;
+    }
+
+    footer{
+        width: 100%;
+        position: relative;
+        display: block;
+        height: fit-content;
+        /* background-color: green; */
+        text-align: center;
+        color: #5f5e5e;
+    }
+
+    footer > *{
+        padding: 30px;
+        font-size: 24px;
+    }
+
+</style>
+</html>
