@@ -1,0 +1,386 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Raleway';
+        font-style: normal;
+    }
+
+
+    img{
+        width: 100%;
+    }
+
+    body{
+        background-color: #f1f1f1;
+    }
+
+    header{
+        width: 100%;
+        min-width: 1066px;
+        background-color: white;
+        /* height: 100%; */
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+    }
+    .container-logo{
+        padding: 12px;
+        padding-left: 15px;
+        font-size: 24px;
+        font-weight: bolder;
+        color: orangered;
+    }
+
+    .container-logo > i{
+        padding-right: 15px;
+    }
+
+    .container-search{
+        padding: 10px;
+        /* background-color: red; */
+        display: flex;
+    }
+
+    .container-search button{
+        font-size: 30px;
+        border: none;
+        background-color: transparent;
+        padding-left: 4px;
+        justify-self: center;
+        margin-left: 10px;
+    }
+
+    .container-search button:hover{
+        color: orangered;
+    }
+
+    .container-search button:focus{
+        color: orangered;
+        border-radius: 30px;
+        background-color: blue;
+    }
+    
+    .search-input{
+        border-radius: 10px;
+        border: none;
+        width: 0px;
+        pointer-events: none;
+        display: block;
+        transition: 0.3s linear;
+        color: white;
+        padding-left: 20px;
+        
+    }
+    
+    .show-input-search{
+        width: 300px;
+        background-color: orangered;
+        pointer-events:all;
+        transition: 0.3s linear;
+    }
+    .container-search input::placeholder{
+        color: white;
+    }
+    .container{
+        width: 1066px;
+        min-width: 1066px;
+        margin: auto;
+        margin-top: 40px;
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+
+    .sec1{
+        width: 100%;
+        margin: 0;
+        position: relative;
+        object-position: center;
+        justify-content: center;
+        border: 1px solid rgb(136, 135, 136);
+        box-sizing: border-box;
+    }
+
+    .abas-flight-hotel-rental{
+        width: 880px;
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        align-self: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .abas-flight-hotel-rental nav{
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        display: flex;
+
+    }
+    .abas-flight-hotel-rental nav button{
+        width: 100%;
+        flex-direction: row;
+        border: none;
+        padding: 10px;
+        background-color: black;
+        color: white;
+    }
+
+    .abas-flight-hotel-rental nav button i{
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .abas-flight-hotel-rental nav button:focus{
+        background-color: orangered;
+    }
+
+    .abas-flight-hotel-rental nav button{
+        padding: 12px;
+    }
+
+    .abas-flight-hotel-rental nav button:hover{
+        background-color: orangered;
+    }
+    .container-aba{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+    .abas-flight-hotel-rental > h2{
+        padding: 15px;
+        padding-top: 30px;
+    }
+
+    .container-textbox{
+        padding: 0 15px;
+        position: relative;
+        display: flex;
+        width: 100%;
+        background-color: white;
+        /* justify-content: space-between; */
+        gap: 15px;
+    }
+    .container-textbox label{
+        font-size: 14px;
+    }
+    .container-textbox div{
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container-textbox div input{
+        padding: 10px;
+        border-width: 0.1pc;        
+    }
+    #from{
+        width: 100%;
+    }
+    .btn-search-and-find{
+        margin: 15px 15px 30px 15px;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #909090;
+        border: none;
+        font-weight: bold;
+        color: white;
+    }
+
+    .sec2{
+        width: 1066px;
+        height: 465px;
+        margin: auto;
+        margin-top: 40px;
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+
+    .container-imagens{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        position: relative;
+        gap: 15px;
+        /* border: rgb(1, 8, 1) 1px solid; */
+    }
+    .container-imagens img{
+        width: calc(50% - 7.5px);
+  }
+    .container-imagens div{
+        /* width: 50%; */
+        position:relative;
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-flow: row wrap;
+    }
+
+
+    .container-buy-tikets{
+        width: 100%;
+        /* background-color: white; */
+        display: flex;
+        flex-flow: row;
+        gap: 15px;
+    }
+    .Buy-tickets{
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        gap: 10px;
+        background-color: white;
+    }
+    .Buy-tickets img{
+        width: 100%;
+    }
+
+    .sec3{
+        width: 1066px;
+        height: 530px;
+        margin: auto;
+        margin-top: 30px;
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+    .sec3 > i, .sec3 > h2{
+        padding: 0;
+    }
+
+    .Buy-tickets > i, .Buy-tickets > h2{
+        padding: 5px 0px 0px 15px;
+    }
+
+    .Buy-tickets button{
+        width: max-content;
+        padding: 10px;
+        margin: 0px 0px 20px 20px;
+        background-color: inherit;
+        border: none;
+        font-size: 14px;
+    }
+
+    /* .sec4{
+        position: relative;
+    } */
+    .container-email-subscribe{
+        background-color: #5f5e5e;
+        color: white;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-email-subscribe > h2,
+    .container-email-subscribe > i,
+    .container-email-subscribe form{
+        padding-left: 15px;
+    }
+    
+    .container-email-subscribe > h2{
+        font-size: 30px;
+        padding-top: 40px;
+    }
+
+    .container-email-subscribe > i{
+        position: relative;
+        padding-top: 20px;
+    }
+    .email-subscribe{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .email-subscribe label{
+        padding-left: 0px;
+        padding-top: 5px;
+    }
+
+    
+    .email-subscribe input{
+        margin: 5px 15px 0px 0px;
+        padding: 10px;
+    }
+
+    .btn-subscribe{
+        height: fit-content;
+        width: fit-content;
+        padding: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .means-contact{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sec4 > h2{
+        margin-top: 40px;
+        font-size: 24px;
+    }
+
+    .container > i{
+        margin-top: 20px;
+    }
+
+    .means-contact{
+        clear: both;
+        margin-top: 20px;
+        gap: 5px;
+    }
+
+    .form-send-menssage{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form-send-menssage > input{
+        padding: 20px;
+
+    }
+
+    .form-send-menssage > button{
+        padding: 20px 30px 20px 30px;
+        width: fit-content;
+        background-color: black;
+        font-weight: bold;
+        font-size: 14px;
+        color: white;
+        border: none;
+    }
+
+    footer{
+        width: 100%;
+        position: relative;
+        display: block;
+        height: fit-content;
+        /* background-color: green; */
+        text-align: center;
+        color: #5f5e5e;
+    }
+
+    footer > h2{
+        font-size: 24px;
+    }
+    .icon-redes-sociais{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 24px;
+    }
+    footer > i{
+        font-size: 14px;
+        padding-bottom: 30px;
+    }
