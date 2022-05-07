@@ -23,6 +23,7 @@
         justify-content: center;
         justify-items: center;
         align-items: center;
+        background-color: #f1eded;
     }
     header{
         width: 100%;
@@ -93,9 +94,8 @@
     .container{
         width: 100%;
         margin: auto;
-        margin-left: 25px;
-        margin-right: 25px;
-        margin-top: 40px;
+        padding: 20px;
+        padding-bottom: 0px;
         position: relative;
         display: flex;
         flex-flow: column;
@@ -103,17 +103,15 @@
     }
 
     .sec1{
-        /* width: 1366px; */
         position: relative;
         margin: 0 auto;
+        padding: 0;
         position: relative;
-        border: 1px solid rgb(136, 135, 136);
         box-sizing: border-box;
     }
 
     .abas-flight-hotel-rental{
         width: 80%;
-        position: relative;
         background-color: rgb(255, 255, 255);
         align-self: center;
         position: absolute;
@@ -210,7 +208,7 @@
     }
 
     .container-imagens-trip-large{
-        width: 50%;
+        width: 100%;
         position: relative;
         display: flex;
         background-color: rgb(177, 12, 149);
@@ -218,7 +216,7 @@
     }
     
     .container-4-imagens{
-        width: 50%;
+        width: 100%;
         display: grid;
         grid-template-columns: auto auto;
         grid-gap: 15px;
@@ -247,7 +245,6 @@
 
     .container-buy-tikets{
         width: 100%;
-        /* background-color: white; */
         display: flex;
         flex-flow: row;
         gap: 15px;
@@ -266,9 +263,7 @@
 
     .sec3{
         width: 1066px;
-        height: 530px;
         margin: auto;
-        margin-top: 30px;
         position: relative;
         display: flex;
         flex-flow: column;
@@ -420,5 +415,44 @@
     }
 
     @media only screen and (max-width:1066px){
-        .sec1, .sec2, .sec3, .sec4 {width: 100%;}
+        .sec2, .sec3, .sec4 {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width:768px){
+        .container-logo{margin-left: 15%;}
+        .container-search{margin-right: 15%;}
+    }
+    
+    @media only screen and (max-width:548px){
+        .abas-flight-hotel-rental{
+            position: relative;
+            transform: none;
+            top:0;
+            left: 0;
+            width: 100%;
+        }
+
+        .sec1 > img{
+            display: none;
+        }
+
+        .container-trip-imagens{
+            flex-direction: column;
+        }
+
+    }
+
+    @media only screen and (max-width:450px){
+        .container-4-imagens{
+            flex-direction: column;
+        }
+        .container-4-imagens{
+            grid-template-columns: auto;
+        }
+
+        .container-buy-tikets{
+            flex-flow: column;
+        }
     }
