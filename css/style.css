@@ -12,15 +12,22 @@
         width: 100%;
     }
 
-    body{
-        background-color: #f1f1f1;
+    html {
+        height: 100%;
     }
-
+    body {
+        width: fit-content;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
     header{
         width: 100%;
-        min-width: 1066px;
         background-color: white;
-        /* height: 100%; */
+        height: 53px;
         display: flex;
         position: relative;
         justify-content: space-between;
@@ -84,9 +91,10 @@
         color: white;
     }
     .container{
-        width: 1066px;
-        min-width: 1066px;
+        width: 100%;
         margin: auto;
+        margin-left: 25px;
+        margin-right: 25px;
         margin-top: 40px;
         position: relative;
         display: flex;
@@ -95,17 +103,16 @@
     }
 
     .sec1{
-        width: 100%;
-        margin: 0;
+        /* width: 1366px; */
         position: relative;
-        object-position: center;
-        justify-content: center;
+        margin: 0 auto;
+        position: relative;
         border: 1px solid rgb(136, 135, 136);
         box-sizing: border-box;
     }
 
     .abas-flight-hotel-rental{
-        width: 880px;
+        width: 80%;
         position: relative;
         background-color: rgb(255, 255, 255);
         align-self: center;
@@ -135,23 +142,19 @@
         font-size: 14px;
     }
 
-    .abas-flight-hotel-rental nav button:focus{
-        background-color: orangered;
-    }
-
     .abas-flight-hotel-rental nav button{
         padding: 12px;
     }
 
     .abas-flight-hotel-rental nav button:hover{
-        background-color: orangered;
+        font-weight: bold;
     }
     .container-aba{
         width: 100%;
         height: 100%;
         padding: 10px;
     }
-    .abas-flight-hotel-rental > h2{
+    #aba-flight > h2{
         padding: 15px;
         padding-top: 30px;
     }
@@ -194,35 +197,53 @@
 
     .sec2{
         width: 1066px;
-        height: 465px;
-        margin: auto;
-        margin-top: 40px;
+        /* width: 100%; */
         position: relative;
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
     }
 
-    .container-imagens{
+    .container-trip-imagens{
         width: 100%;
-        height: max-content;
+        height:fit-content;
         display: flex;
         position: relative;
         gap: 15px;
-        /* border: rgb(1, 8, 1) 1px solid; */
-    }
-    .container-imagens img{
-        width: calc(50% - 7.5px);
-  }
-    .container-imagens div{
-        /* width: 50%; */
-        position:relative;
-        display: flex;
-        justify-content: space-between;
-        align-content: space-between;
-        flex-flow: row wrap;
     }
 
+    .container-imagens-trip-large{
+        width: 50%;
+        position: relative;
+        display: flex;
+        background-color: rgb(177, 12, 149);
+        overflow: hidden;
+    }
+    
+    .container-4-imagens{
+        width: 50%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 15px;
+        background-color: #fff;
+        color: #444;
+    }
+
+    .container-imagens-small{
+        position: relative;
+        display: flex;
+        background-color: rgb(177, 12, 149);
+        text-align: center;
+    }
+    
+    .legend-container{
+        position: absolute;
+        z-index: 999;
+        color: rgb(250, 250, 250);
+        font-weight: 500;
+        padding: 0 5px;
+        border-radius: 5px;
+        /* background-color: red; */
+        top: calc(100% - 30px);
+        left: 10px;
+     }
 
     .container-buy-tikets{
         width: 100%;
@@ -239,8 +260,8 @@
         gap: 10px;
         background-color: white;
     }
-    .Buy-tickets img{
-        width: 100%;
+    .Buy-tickets > img{
+        height: 100%;
     }
 
     .sec3{
@@ -270,9 +291,19 @@
         font-size: 14px;
     }
 
-    /* .sec4{
+    .Buy-tickets button:hover{
+        background-color: orangered;
+        color: white;
+        font-weight: bold;
+    }
+
+    .Buy-tickets button:active{
+        background-color: red;
+    }
+    .sec4{
+        width: 1066px;
         position: relative;
-    } */
+    } 
     .container-email-subscribe{
         background-color: #5f5e5e;
         color: white;
@@ -316,9 +347,12 @@
     .btn-subscribe{
         height: fit-content;
         width: fit-content;
-        padding: 5px;
+        padding: 10px 15px 10px 15px;
         margin-top: 15px;
         margin-bottom: 15px;
+        background-color: orangered;
+        color: white;
+        border: none;
     }
     .means-contact{
         display: flex;
@@ -353,7 +387,7 @@
     }
 
     .form-send-menssage > button{
-        padding: 20px 30px 20px 30px;
+        padding: 15px 30px 15px 30px;
         width: fit-content;
         background-color: black;
         font-weight: bold;
@@ -383,4 +417,8 @@
     footer > i{
         font-size: 14px;
         padding-bottom: 30px;
+    }
+
+    @media only screen and (max-width:1066px){
+        .sec1, .sec2, .sec3, .sec4 {width: 100%;}
     }

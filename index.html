@@ -7,9 +7,9 @@
     <link rel="stylesheet" type="text/css" href="/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <script src="/script/script.js"></script>
-    <title>Desagio Dev Media</title>
+    <title>Desafio Dev Media</title>
 </head>
-<body >
+<body onload="Init()">
     <header>
         <div class="container-logo">
             <i class="fa fa-map-marker"></i>
@@ -21,41 +21,64 @@
         </form>
     </header>
     <section class="container sec1">
-        <img class="background-sec1"src="/imagens/london.jpg" alt="imagem de londres">
+        <img src="/imagens/london.jpg" alt="imagem de londres">
         <div class="abas-flight-hotel-rental">
-            <nav>
-                <button class="fa fa-plane"><i>Flight</i></button>
-                <button class="fa fa-bed"><i>Hotel</i></button>
-                <button class="fa fa-car"><i>Rental</i></button>
+            <nav >
+                <button onclick="ShowAba('flight')" id="btn-flight" class="fa fa-plane"><i>Flight</i></button>
+                <button onclick="ShowAba('hotel')" id="btn-hotel" class="fa fa-bed"><i>Hotel</i></button>
+                <button onclick="ShowAba('rental')" id="btn-rental" class="fa fa-car"><i>Rental</i></button>
             </nav>
             <!-- <div class="container-aba"> -->
-            <h2>Travel the world with us</h2>
-            <form action="">
-                <div class="container-textbox">
-                    <div>
-                        <label for="from">From</label>
-                        <input type="text" name="from" id="from" placeholder="Departing from">
+            <div id="aba-flight">
+                <h2>Travel the world with us</h2>
+                <form action="">
+                    <div class="container-textbox">
+                        <div>
+                            <label for="from">From</label>
+                            <input type="text" name="from" id="from" placeholder="Departing from">
+                        </div>
+                        <div>
+                            <label for="to">To</label>
+                            <input type="text" id="to" name="to" placeholder="Arriving at">
+                        </div>
                     </div>
-                    <div>
-                        <label for="to">To</label>
-                        <input type="text" id="to" name="to" placeholder="Arriving at">
-                    </div>
-                </div>
-                <button class="btn-search-and-find">search and find dates</button>
-                <!-- </div> -->
-            </form>
+                    <button class="btn-search-and-find">search and find dates</button>
+                    <!-- </div> -->
+                </form>
+            </div>
+            <div id="aba-hotel">
+                <h2>Hotel</h2>
+            </div>
+            <div id="aba-rental">
+                <h2>Hental</h2>
+            </div>
         </div>
     </section>
     <section class="container sec2">
         <h2>Good Offers Right Now</h2>
         <i>Up to <b>50%</b> discount</i>
-        <div class="container-imagens">
-            <img src="/imagens/cinqueterre.jpg">
-            <div>
-                <img src="/imagens/newyork.jpg" >
-                <img src="/imagens/sanfran.jpg" >
-                <img src="/imagens/pisa.jpg" >
-                <img src="/imagens/paris.jpg">
+        <div class="container-trip-imagens">
+            <picture class="container-imagens-trip-large">
+                <img src="/imagens/cinqueterre.jpg">
+                <div class="legend-container">Cinqueterre</div>
+            </picture>
+            <div class="container-4-imagens">
+                <picture class="container-imagens-small">
+                    <img src="/imagens/newyork.jpg" >
+                    <div class="legend-container">New York</div>
+                </picture>
+                <picture class="container-imagens-small">
+                    <img src="/imagens/sanfran.jpg" >
+                    <div class="legend-container">San Francisco</div>
+                </picture>
+                <picture class="container-imagens-small">
+                    <img src="/imagens/pisa.jpg" >
+                    <div class="legend-container">Pisa</div>
+                </picture>
+                <picture class="container-imagens-small">
+                    <img src="/imagens/paris.jpg">
+                    <div class="legend-container">Paris</div>
+                </picture>
             </div>
         </div>
     </section>
@@ -73,9 +96,9 @@
             </div>
 
             <div class="Buy-tickets" >
-                <img src="/imagens/ocean.jpg" alt="">
-                <h2>West Coast, Norway</h2>
-                <i>Roundtrip from $79</i>
+                <img src="/imagens/mountains.jpg" alt="">
+                <h2>Mountains, Austria</h2>
+                <i>Roundtrip from $39</i>
                 <i>Praesent tincidunt sed tellis sed vitae justo</i>
                 <Button>Buy Tickets</Button>
             </div>
@@ -100,11 +123,11 @@
             <i class="fa fa-phone contact-means-icon" ><a style="padding-left: 1.1rem; font-family: 'Raleway';">Phone: +00 151515</a></i>
             <i class="fa fa-envelope contact-means-icon fnt-envelope" ><a style="padding-left: 16px; font-family: 'Raleway';">Email: mail@mail.com</a></i>
         </div>
-        <form class="form-send-menssage">
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Message">
-            <button>SEND MESSAGE</button>
+        <form method="get" class="form-send-menssage" action="">
+            <input type="text" id="name" name="name" placeholder="Name">
+            <input type="text" id="email" name="email" placeholder="Email">
+            <input type="text" id="message" name="message" placeholder="Message">
+            <button type="submit">SEND MESSAGE</button>
         </form>
     </section>
 
@@ -119,6 +142,6 @@
             <i class="fa fa-linkedin"></i>
         </div>
         <i class="ft-size-small">Powered by <u>w3css</u> </i>
-    </footer>
+    </footer> 
 </body>
 </html>

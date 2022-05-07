@@ -1,7 +1,6 @@
 function showSearchInput(element){
 
     var input = document.getElementById('search-input');
-    var display = window.getComputedStyle(input, null).display;
 
     if(input){
         element.disabled = true;
@@ -24,5 +23,24 @@ function mfunc(){
         
         if(btn)
             btn.disabled = false;
+    }
+}
+
+function Init()
+{
+    ShowAba('flight')
+}
+
+function ShowAba(strAba)
+{
+    const arrayAbas = ['hotel', 'rental', 'flight'];
+    for(var str_aba of arrayAbas)
+    {
+        var Aba = document.getElementById(`aba-${str_aba}`);
+        var btnAba = document.getElementById(`btn-${str_aba}`);
+        if(Aba){
+            Aba.style.display = (strAba == str_aba) ? "":"none";
+            btnAba.style.backgroundColor = (strAba == str_aba) ? "orangered":"black";
+        }
     }
 }
