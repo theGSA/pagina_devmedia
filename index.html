@@ -11,14 +11,16 @@
 </head>
 <body onload="Init()">
     <header>
-        <div class="container-logo">
-            <i class="fa fa-map-marker"></i>
-            <i>Logo</i>
+        <div class="container-logo-search">
+            <div class="container-logo">
+                <i class="fa fa-map-marker"></i>
+                <i>Logo</i>
+            </div>
+            <form class="container-search" action="" >
+                <input type="text" onfocusout="mfunc()" placeholder="Search" class="search-input" id="search-input">
+                <button id="btn-search" type="button" onclick="showSearchInput(this)" class="fa fa-search"></button>
+            </form>
         </div>
-        <form class="container-search" action="" >
-            <input type="text" onfocusout="mfunc()" placeholder="Search" class="search-input" id="search-input">
-            <button id="btn-search" type="button" onclick="showSearchInput(this)" class="fa fa-search"></button>
-        </form>
     </header>
     <section class="container sec1">
         <img src="/imagens/london.jpg" alt="imagem de londres">
@@ -31,7 +33,7 @@
             <!-- <div class="container-aba"> -->
             <div id="aba-flight">
                 <h2>Travel the world with us</h2>
-                <form action="">
+                <form method="post" action="search">
                     <div class="container-textbox">
                         <div>
                             <label for="from">From</label>
@@ -42,8 +44,7 @@
                             <input type="text" id="to" name="to" placeholder="Arriving at">
                         </div>
                     </div>
-                    <button class="btn-search-and-find">search and find dates</button>
-                    <!-- </div> -->
+                    <button type="submit" class="btn-search-and-find">search and find dates</button>
                 </form>
             </div>
             <div id="aba-hotel">
@@ -60,7 +61,7 @@
         <div class="container-trip-imagens">
             <picture class="container-imagens-trip-large">
                 <img src="/imagens/cinqueterre.jpg">
-                <div class="legend-container">Cinqueterre</div>
+                <div class="legend-container">Cinque terre</div>
             </picture>
             <div class="container-4-imagens">
                 <picture class="container-imagens-small">
@@ -86,7 +87,7 @@
     <section class="container sec3">
         <h2>Explore Nature</h2>
         <i>Travel with us and see nature at its finest</i>
-        <div class="container-buy-tikets">
+        <form class="container-buy-tikets">
             <div class="Buy-tickets">
                 <img src="/imagens/ocean.jpg" alt="">
                 <h2>West Coast, Norway</h2>
@@ -102,7 +103,7 @@
                 <i>Praesent tincidunt sed tellis sed vitae justo</i>
                 <Button>Buy Tickets</Button>
             </div>
-        </div>
+        </form>
     </section>
 
     <section class="container sec4">

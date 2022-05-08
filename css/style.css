@@ -12,6 +12,10 @@
         width: 100%;
     }
 
+    input{
+        margin: 2px;
+    }
+
     html {
         height: 100%;
     }
@@ -20,18 +24,23 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        justify-items: center;
+        margin: 0 auto;
         align-items: center;
         background-color: #f1eded;
     }
     header{
         width: 100%;
         background-color: white;
-        height: 53px;
         display: flex;
         position: relative;
         justify-content: space-between;
+    }
+
+    .container-logo-search{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
     }
     .container-logo{
         padding: 12px;
@@ -83,7 +92,7 @@
     }
     
     .show-input-search{
-        width: 300px;
+        width: 200px;
         background-color: orangered;
         pointer-events:all;
         transition: 0.3s linear;
@@ -158,12 +167,10 @@
     }
 
     .container-textbox{
+        width: 100%;
         padding: 0 15px;
         position: relative;
         display: flex;
-        width: 100%;
-        background-color: white;
-        /* justify-content: space-between; */
         gap: 15px;
     }
     .container-textbox label{
@@ -171,18 +178,15 @@
     }
     .container-textbox div{
         display: flex;
-        gap: 5px;
+        gap: 10px;
         flex-direction: column;
         width: 100%;
     }
 
-    .container-textbox div input{
+    .container-textbox > div > input{
         padding: 10px;
-        border-width: 0.1pc;        
     }
-    #from{
-        width: 100%;
-    }
+
     .btn-search-and-find{
         margin: 15px 15px 30px 15px;
         padding: 10px;
@@ -195,7 +199,6 @@
 
     .sec2{
         width: 1066px;
-        /* width: 100%; */
         position: relative;
     }
 
@@ -395,6 +398,7 @@
         width: 100%;
         position: relative;
         display: block;
+        padding-top: 20px;
         height: fit-content;
         /* background-color: green; */
         text-align: center;
@@ -421,11 +425,17 @@
     }
 
     @media only screen and (max-width:768px){
-        .container-logo{margin-left: 15%;}
-        .container-search{margin-right: 15%;}
+        .container-logo-search{
+            width: 500px;
+        }  
     }
     
-    @media only screen and (max-width:548px){
+    @media only screen and (max-width: 500px){
+        .container-logo-search{
+            width: 100%;
+        }  
+    }
+    @media only screen and (max-width:580px){
         .abas-flight-hotel-rental{
             position: relative;
             transform: none;
@@ -448,11 +458,22 @@
         .container-4-imagens{
             flex-direction: column;
         }
+
         .container-4-imagens{
             grid-template-columns: auto;
         }
 
         .container-buy-tikets{
+            flex-flow: column;
+        }
+
+        .container-textbox{
+            flex-flow: column;
+        }
+    }
+
+    @media only screen and (max-width:320px){
+        .container-textbox{
             flex-flow: column;
         }
     }
